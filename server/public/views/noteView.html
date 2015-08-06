@@ -1,0 +1,19 @@
+<div ng-controller="notesAppCtrl">
+  <h3>Your Recent Notes</h3>
+  <div style="padding:50px">
+  <div ng-repeat="note in notes" class="tip left" >
+    <span>{{note._source.content}}</span>
+    <br>
+    <span style="float:right">{{ note._source.created_at }}
+  </div>
+  <br>
+  <!-- <pre>{{notes | json}}</pre> -->
+</div>
+
+
+
+
+<!-- <div class="note-container">
+  <div> </div>
+</div>
+ -->

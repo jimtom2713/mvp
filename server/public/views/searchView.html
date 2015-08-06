@@ -1,0 +1,8 @@
+<div id="contact" ng-controller="notesAppCtrl">
+  <h1>Create a new post</h1>
+  <form ng-submit="createPost(content)">
+      <label for="message">Post:</label>
+      <textarea ng-model='content' id="message" placeholder="What's on your mind?"></textarea> 
+      <input type="submit" value="Create Post" />
+  </form>
+</div>

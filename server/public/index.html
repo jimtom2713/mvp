@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script src="resources/angular.js"></script>
+    <script src="resources/angular-route.js"></script>
+    <script src="resources/angular-sanitize.js"></script>
+    <script src="views/angularMain.js"></script>
+    <meta charset="utf-8" />
+    <title>Elastic-Notes</title>
+  </head>
+  <body ng-app='notesApp'>
+    <h1> Elastic-Notes </h1>
+    <div id="wrap" class='navigation' ng-controller="notesAppCtrl">
+      <ul id="nav">
+        <li><a href="#/home" class='home' ng-click="getNotes()">Home</a></li>
+        <li><a href="#/search" class='search' >Post</a></li>
+        <li><a href="#/reccommend" class='search' >Search</a></li>
+        <li><a href="#/logout" class='logout' >Logout</a></li>
+        <li><a href="#/login" class='logout' >Login</a></li>
+      </ul>
+    </div>
+    <div ng-view></div>
+  </body>
+</html>
